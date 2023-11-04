@@ -1,5 +1,19 @@
-@media (max-width: 600px) {
+/* @media (max-width: 600px) {
     .all {
         flex-direction: row;
+    }
+}
+*/
+
+@media screen and (max-width: 768px) {
+    #me {
+        display: flex;
+        width: 100%;
+        justify-content: space-around;
+    }
+
+    .sobre {
+        width: 100%;
+        flex-direction: column;
     }
 }
