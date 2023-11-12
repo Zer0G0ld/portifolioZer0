@@ -3,6 +3,7 @@ body {
     color: #000000;
     font-size: 14px;
     font-family: monospace;
+    overflow-x: hidden;
 }
 
 a {
