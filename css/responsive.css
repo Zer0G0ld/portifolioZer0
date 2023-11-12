@@ -5,15 +5,54 @@
 }
 */
 
+/* Telas de tamanho medio */
 @media screen and (max-width: 768px) {
+    body {
+        font-size: 14px;
+        overflow-x: hidden;
+    }
+    
+    #header {
+        text-align: center;
+    }
+
     #me {
         display: flex;
         width: 100%;
         justify-content: space-around;
+        text-align: center;
     }
 
     .sobre {
         width: 100%;
         flex-direction: column;
+        
+    }
+}
+
+/* Telas pequenas */
+@media screen and (max-width: 480px){
+    body {
+        font-size: 12px;
+        overflow-x: hidden;
+    }
+
+    #header {
+        ul {
+            flex-direction: column;
+            text-align: center;
+        }
+    }
+
+    #me {
+        text-align: center;
+    }
+
+    #mein {
+        padding: 10px;
+    }
+
+    #sobre, #projetos, #redes {
+        padding: 10px;
     }
 }
