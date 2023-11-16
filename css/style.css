@@ -1,44 +1,65 @@
-#header {
+header {
     margin: 20px;
-    border-bottom: 3px solid #838383;
+    border-bottom: 3px solid #3d3d3d;
 }
 
+.header-top {
+    border-radius: 5%;
+}
 
-
-a:hover {
+a:hover{
     margin: 10px;
     padding: 10px;
     background-color: #00ff008e;
     border-radius: 20px;
 }
 
-#header ul li {
-    display: inline-block;
-    float: right;
-    margin: 20px;
+h2 {
+    font-size: 18px;
+    font-style: italic;
+    margin: 0;
 }
 
-#main {
-    margin: 20px;
+.menu {
+    align-items: end;
 }
 
+section {
+    padding: 10px;
+}
+
+.projeto {
+    margin-bottom: 20px;
+}
+
+form {
+    display: grid;
+    grid-gap: 20px
+}
+
+input[type="text"], input[type="email"] {
+    width: 400px;
+    padding: 5px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+/* ID's */
 #me {
     display: flex;
-}
-
-#me h1 {
-    text-align: center;
 }
 
 #me h2 {
     text-align: center;
     margin-top: 10px;
-}
-
-h2 {
-    font-size: 18px;
-    font-style: italic;
-    margin: 0;
 }
 
 #sobre {
@@ -49,45 +70,14 @@ h2 {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     background-color: #fff;
     margin: 0 auto;
+    color: #000;
 }
 
-#sobre p{
+#sobre p {
     font-size: 16px;
     margin-left: 20px;
     margin-right: 20px;
 }
 
-.conteiner {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    
-}
 
-.item {
-    width: 200px;
-    height: 300px;
-    gap: 4%;
-    border: 2px solid #ccc;
-    border-radius: 10px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    background-color: #fff;
-    text-align: center;
-    font-size: 15px;
-    display: inline-block;
-    margin: 5px;
-    border: 1px solid #ccc;
-}
-
-p {
-    font-size: 14px;
-    margin: 10px 0;
-    text-decoration: double;
-}
-
-.item p {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: row;
-}
+/* TITULOS */
