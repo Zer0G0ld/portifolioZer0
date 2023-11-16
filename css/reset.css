@@ -1,9 +1,24 @@
 body {
     background-color: #ffffff;
     color: #000000;
+    margin: 0;
+    border: 0;
     font-size: 14px;
-    font-family: monospace;
-    overflow-x: hidden;
+    font-family: 'Courier New', Courier, monospace;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    text-align: center;
+    padding: 10px;
+    background-color: darkslategray;
+    color: white;
+}
+
+main {
+    background-color: darkolivegreen;
+    color: white;
 }
 
 a {
@@ -21,4 +36,11 @@ ul {
 li {
     margin-left: 20px;
     padding: 5px;
+}
+
+footer {
+    text-align: center;
+    padding: 5px;
+    background-color: darkslategray;
+    color: white;
 }
