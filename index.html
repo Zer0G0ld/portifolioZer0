@@ -31,65 +31,80 @@
         </div>
     </header>
     <main>
-        <section id="sobre">
-            <h2>Sobre : </h2>
-
-            <p>Sou um desenvolvedor júnior em aprendizado no back-end. Este portfólio é meu primeiro projeto no
-                front-end e também contém alguns projetos
-                back-end. Ainda não me sinto preparado para desafios maiores no mercado, apesar de conhecer várias
-                funções, ferramentas e tecnologias. No entanto, consigo aprender
-                rapidamente e minha lógica de programação é ótima. Me adapto rapidamente aos locais que estou inserido
-                sem perder nada apenas acrescentando. No momento, estou
-                me aprofundando nas linguagens que já estou familiarizado como o python, java script, shell, html5, css3
-                e php. Estou me colocando em disposição para aprender mais.</p>
+        <section id="sobre" class="sobre-class expansion-conteiner">
+            <div class="sobre-mim">
+                <div class="expansion-headerSobre" onclick="toggleExpansionSobre()">
+                    <h2>Sobre : </h2>
+                </div>
+                <div class="conteinerSobre expansion-contentSobre">
+                    <p>Sou um desenvolvedor júnior em aprendizado no back-end. Este portfólio é meu primeiro projeto no
+                        front-end e também contém alguns projetos
+                        back-end. Ainda não me sinto preparado para desafios maiores no mercado, apesar de conhecer
+                        várias
+                        funções, ferramentas e tecnologias. No entanto, consigo aprender
+                        rapidamente e minha lógica de programação é ótima. Me adapto rapidamente aos locais que estou
+                        inserido
+                        sem perder nada apenas acrescentando. No momento, estou
+                        me aprofundando nas linguagens que já estou familiarizado como o python, java script, shell,
+                        html5,
+                        css3
+                        e php. Estou me colocando em disposição para aprender mais.</p>
+                </div>
+            </div>
         </section>
-        <section id="projetos">
-            <h2>Projetos : </h2>
-
-            <div class="projeto">
-                <ul>
-                    <li>
-                        <h3>ShellZero</h3>
-                        <br />
-                        <p>Shell Zero é uma concha que estou desenvolvendo
-                            em python e meu objetivo é um dia compará-la com
-                            Bash, fish ou Oh My Zsh</p>
-                        <br />
-                        <p>Link para o projeto : <a href="#">ShellZero</a></p>
-                    </li>
-                </ul>
+        <section id="projetos" class="expansion-conteiner">
+            <div class="expansion-header" onclick="toggleExpansion()">
+                <h2>Projetos : </h2>
             </div>
-            <div class="projeto">
-                <ul>
-                    <li>
-                        <h3>TZSoundWave</h3>
-                        <br />
-                        <p>SoundWave é um bot de música para o discord.
-                        <br>
-                        Use como desejar esse bot. Mas devo lembrar que 
-                        esse é um modelo que você pode usar.
-                        <br>
-                        Ele usa as bibliotecas `discord.py`, `asyncio`, 
-                        `youtube_dl` então certifique-se de ter baixado 
-                        corretamente essas dependências</p>
-                        <br />
-                        <p>Link para o projeto : <a href="#">TZSoundWave</a></p>
-                    </li>
-                </ul>
-            </div>
-            <div class="projeto">
-                <ul>
-                    <li>
-                        <h3>TZBasicTolls</h3>
-                        <br />
-                        <p>Este repositório contém scripts de instalação para muitas 
-                        ferramentas populares. Com esses scripts, você pode instalar 
-                        facilmente essas ferramentas em seu sistema operacional. O script 
-                        só foi testado no termux.</p>
-                        <br />
-                        <p>Link para o projeto : <a href="#">TZBasicTolls</a></p>
-                    </li>
-                </ul>
+            <div class="conteiner expansion-content">
+                <div class="projeto">
+                    <ul>
+                        <li>
+                            <h3>ShellZero</h3>
+                            <br />
+                            <p>Shell Zero é uma concha que estou desenvolvendo
+                                em python e meu objetivo é um dia compará-la com
+                                Bash, fish ou Oh My Zsh</p>
+                            <br />
+                            <p>Link para o projeto : <a href="#">ShellZero</a></p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="projeto">
+                    <div>
+                        <ul>
+                            <li>
+                                <h3>TZSoundWave</h3>
+                                <br />
+                                <p>SoundWave é um bot de música para o discord.
+                                    <br>
+                                    Use como desejar esse bot. Mas devo lembrar que
+                                    esse é um modelo que você pode usar.
+                                    <br>
+                                    Ele usa as bibliotecas `discord.py`, `asyncio`,
+                                    `youtube_dl` então certifique-se de ter baixado
+                                    corretamente essas dependências
+                                </p>
+                                <br />
+                                <p>Link para o projeto : <a href="#">TZSoundWave</a></p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="projeto">
+                        <ul>
+                            <li>
+                                <h3>TZBasicTolls</h3>
+                                <br />
+                                <p>Este repositório contém scripts de instalação para muitas
+                                    ferramentas populares. Com esses scripts, você pode instalar
+                                    facilmente essas ferramentas em seu sistema operacional. O script
+                                    só foi testado no termux.</p>
+                                <br />
+                                <p>Link para o projeto : <a href="#">TZBasicTolls</a></p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
             </div>
         </section>
         <section id="redes">
