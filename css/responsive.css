@@ -1,18 +1,40 @@
-/* @media (max-width: 600px) {
-    .all {
-        flex-direction: row;
+/* Telas pequenas */
+@media screen and (max-width: 480px) {
+    body {
+        font-size: 12px;
+        overflow-x: hidden;
+    }
+
+    header ul {
+        flex-direction: column; /* Corrigido seletor do menu */
+        text-align: center;
+    }
+
+    #me {
+        text-align: center;
+    }
+
+    #me h1, #me h2 { /* Corrigido seletor dos cabeçalhos */
+        text-align: center;
+    }
+
+    /* Adicionado padding aos itens de seção */
+    #sobre,
+    #projetos,
+    #redes,
+    #contato {
+        padding: 10px;
     }
 }
-*/
 
-/* Telas de tamanho medio */
+/* Telas de tamanho médio */
 @media screen and (max-width: 768px) {
     body {
         font-size: 14px;
         overflow-x: hidden;
     }
-    
-    #header {
+
+    header {
         text-align: center;
     }
 
@@ -23,36 +45,8 @@
         text-align: center;
     }
 
-    .sobre {
+    #sobre {
         width: 100%;
         flex-direction: column;
-        
-    }
-}
-
-/* Telas pequenas */
-@media screen and (max-width: 480px){
-    body {
-        font-size: 12px;
-        overflow-x: hidden;
-    }
-
-    #header {
-        ul {
-            flex-direction: column;
-            text-align: center;
-        }
-    }
-
-    #me {
-        text-align: center;
-    }
-
-    #mein {
-        padding: 10px;
-    }
-
-    #sobre, #projetos, #redes {
-        padding: 10px;
     }
 }

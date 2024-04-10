@@ -1,119 +1,67 @@
+/* Adiciona uma margem interna ao cabeçalho */
 header {
     margin: 20px;
+    padding: 10px 0;
     border-bottom: 3px solid #3d3d3d;
 }
 
+/* Adiciona borda arredondada à parte superior do cabeçalho */
 .header-top {
-    border-radius: 5%;
+    border-top-left-radius: 5%;
+    border-top-right-radius: 5%;
 }
 
-a:hover{
+/* Estiliza links quando passa o mouse por cima */
+a:hover,
+.menu li:hover a {
     margin: 10px;
     padding: 10px;
-    background-color: #00ff008e;
+    background-color: rgba(0, 255, 0, 0.56);
     border-radius: 20px;
 }
 
-menu li:hover a {
-    margin: 10px;
-    padding: 10px;
-    background-color: #00ff008e;
-    border-radius: 20px;
-}
-
-.visible {
-    display: block;
-}
-
-h2 {
-    font-size: 18px;
-    font-style: italic;
-    margin: 0;
-}
-
+/* Ajusta alinhamento dos itens do menu */
 .menu {
-    align-items: end;
+    align-items: center; /* Substituído de "end" para "center" */
 }
 
+/* Define estilo de seções */
 section {
-    padding: 10px;
+    padding: 20px; /* Aumenta o preenchimento interno */
 }
 
+/* Ajusta margem inferior de projetos */
 .projeto {
-    margin-bottom: 20px;
+    margin-bottom: 30px; /* Aumenta a margem inferior */
 }
 
+/* Estilo do formulário */
 form {
     display: grid;
-    grid-gap: 20px
+    grid-gap: 20px;
 }
 
-input[type="text"], input[type="email"] {
-    width: 400px;
-    padding: 5px;
-    margin-bottom: 10px;
+/* Ajusta largura e estilo dos campos de entrada */
+input[type="text"],
+input[type="email"] {
+    width: 100%; /* Alterado para ocupar toda a largura disponível */
+    padding: 10px; /* Aumenta o preenchimento interno */
     box-sizing: border-box;
 }
 
+/* Estilo do botão */
 button {
     background-color: #333;
     color: #fff;
-    padding: 10px;
+    padding: 12px 20px; /* Aumenta o preenchimento interno */
     border: none;
     cursor: pointer;
+    border-radius: 20px; /* Adiciona borda arredondada */
 }
 
-/* ID's */
-#me {
-    display: flex;
-}
-
-#me h2 {
-    text-align: center;
-    margin-top: 10px;
-}
-
-#sobre {
-    width: 600px;
-    padding: 20px;
-    border: 1px solid #ccc;
-    border-radius: 10px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    background-color: #fff;
-    color: #000;
-    margin: 0 auto;
-}
-
-#sobre p {
-    font-size: 16px;
-    margin-left: 20px;
-    margin-right: 20px;
-}
-
-/* EXPANSAO DIV'S */
-.expansion-conteiner {
-    border: 1px solid #ddd;
-    margin: 10px;
-}
-
-.expansion-header {
-    background-color: #f1f1f1;
-    color: #000;
-    padding: 10px;
-    cursor: pointer;
-}
-
-.expansion-content {
-    display: none;
-    padding: 10px;
-}
-
-.conteiner {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
+/* Expansão de conteúdo */
+.expansion-conteiner,
+.expansion-header,
 .expansion-headerSobre {
     background-color: #f1f1f1;
     color: #000;
@@ -121,16 +69,43 @@ button {
     cursor: pointer;
 }
 
+.expansion-content,
 .expansion-contentSobre {
     display: none;
     padding: 10px;
 }
 
+/* Centraliza conteúdo */
+.conteiner,
 .conteinerSobre {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
+/* Títulos */
+h2 {
+    font-size: 24px; /* Aumenta o tamanho da fonte */
+    font-style: italic;
+    margin: 0;
+    margin-bottom: 20px; /* Aumenta a margem inferior */
+    text-align: center; /* Centraliza o texto */
+}
 
-/* TITULOS */
+/* Sobre */
+#sobre {
+    max-width: 600px; /* Alterado para largura máxima */
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    color: #000;
+    margin: 20px auto; /* Alterado para centralizar verticalmente e adicionar margem superior */
+}
+
+#sobre p {
+    font-size: 16px;
+    margin: 0;
+    margin-bottom: 10px; /* Aumenta a margem inferior */
+}

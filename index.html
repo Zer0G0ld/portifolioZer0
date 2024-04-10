@@ -4,26 +4,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zer0 | Code</title>
 
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
 
+    <!-- Estilos personalizados -->
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/responsive.css">
     <link rel="stylesheet" href="./css/style.css">
 
+    <!-- Ícone do site -->
     <link rel="shortcut icon" href="./src/anon.png" type="image/x-icon">
-
-    <title>Zer0 | Code</title>
 </head>
 
 <body>
-    <header class=" text-white">
+    <header class="text-white">
         <div class="container">
             <div class="row">
                 <div class="col-md-8">
                     <ul class="menu">
-                        <li><a href="#me">Sobre</a></li>
+                        <li><a href="#sobre">Sobre</a></li>
                         <li><a href="#projetos">Projetos</a></li>
                         <li><a href="#redes">Redes</a></li>
                         <li><a href="#contato">Contato</a></li>
@@ -38,13 +39,13 @@
             </div>
         </div>
     </header>
-    <main >
-        <section id="sobre" class="sobre-class expansion-conteiner conteiner">
+    <main>
+        <section id="sobre" class="expansion-container container">
             <div class="sobre-mim">
-                <div class="expansion-headerSobre" onclick="toggleExpansion()">
+                <div class="expansion-header" onclick="toggleExpansion('expansion-contentSobre')">
                     <h2>Sobre : </h2>
                 </div>
-                <div class="conteiner expansion-content">
+                <div class="expansion-contentSobre expansion-content">
                     <p>Sou um desenvolvedor júnior em aprendizado no back-end. Este portfólio é meu primeiro projeto no
                         front-end e também contém alguns projetos
                         back-end. Ainda não me sinto preparado para desafios maiores no mercado, apesar de conhecer
@@ -60,11 +61,11 @@
                 </div>
             </div>
         </section>
-        <section id="projetos" class="expansion-conteiner conteiner">
-            <div class="expansion-header" onclick="toggleExpansion()">
+        <section id="projetos" class="expansion-container container">
+            <div class="expansion-header" onclick="toggleExpansion('expansion-contentProjetos')">
                 <h2>Projetos : </h2>
             </div>
-            <div class="conteiner expansion-content">
+            <div class="expansion-contentProjetos expansion-content">
                 <div class="projeto">
                     <ul>
                         <li>
@@ -79,46 +80,44 @@
                     </ul>
                 </div>
                 <div class="projeto">
-                    <div>
-                        <ul>
-                            <li>
-                                <h3>TZSoundWave</h3>
-                                <br />
-                                <p>SoundWave é um bot de música para o discord.
-                                    <br>
-                                    Use como desejar esse bot. Mas devo lembrar que
-                                    esse é um modelo que você pode usar.
-                                    <br>
-                                    Ele usa as bibliotecas `discord.py`, `asyncio`,
-                                    `youtube_dl` então certifique-se de ter baixado
-                                    corretamente essas dependências
-                                </p>
-                                <br />
-                                <p>Link para o projeto : <a href="#">TZSoundWave</a></p>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="projeto">
-                        <ul>
-                            <li>
-                                <h3>TZBasicTolls</h3>
-                                <br />
-                                <p>Este repositório contém scripts de instalação para muitas
-                                    ferramentas populares. Com esses scripts, você pode instalar
-                                    facilmente essas ferramentas em seu sistema operacional. O script
-                                    só foi testado no termux.</p>
-                                <br />
-                                <p>Link para o projeto : <a href="#">TZBasicTolls</a></p>
-                            </li>
-                        </ul>
-                    </div>
+                    <ul>
+                        <li>
+                            <h3>TZSoundWave</h3>
+                            <br />
+                            <p>SoundWave é um bot de música para o discord.
+                                <br>
+                                Use como desejar esse bot. Mas devo lembrar que
+                                esse é um modelo que você pode usar.
+                                <br>
+                                Ele usa as bibliotecas `discord.py`, `asyncio`,
+                                `youtube_dl` então certifique-se de ter baixado
+                                corretamente essas dependências
+                            </p>
+                            <br />
+                            <p>Link para o projeto : <a href="#">TZSoundWave</a></p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="projeto">
+                    <ul>
+                        <li>
+                            <h3>TZBasicTolls</h3>
+                            <br />
+                            <p>Este repositório contém scripts de instalação para muitas
+                                ferramentas populares. Com esses scripts, você pode instalar
+                                facilmente essas ferramentas em seu sistema operacional. O script
+                                só foi testado no termux.</p>
+                            <br />
+                            <p>Link para o projeto : <a href="#">TZBasicTolls</a></p>
+                        </li>
+                    </ul>
                 </div>
             </div>
         </section>
-        <section id="redes" class="conteiner">
+        <section id="redes" class="container">
             <h2>Redes : </h2>
             <ul>
-                <li><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512" alt="Instagram><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                <li><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512" alt="Instagram"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
                             <path
                                 d=" M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339
                             255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5
@@ -165,7 +164,7 @@
                 <input type="text" name="name" id="name" required>
 
                 <label for="email">Email : </label>
-                <input type="text" name="email" id="email" required>
+                <input type="email" name="email" id="email" required>
 
                 <label for="message">Mensagem : </label>
                 <textarea name="message" id="message" cols="30" rows="10" required></textarea>
@@ -174,8 +173,8 @@
             </form>
         </section>
     </main>
-    <footer class="conteiner">
-        <p>Author: CodeOpen | Zer0G0ld </p>
+    <footer class="container">
+        <p>Author: CodeOpen | Zer0G0ld</p>
     </footer>
 
     <script src="./js/index.js"></script>
